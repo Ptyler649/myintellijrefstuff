@@ -54,3 +54,15 @@
             System.out.println(sbr);
 
 
+ // reverse string without StringBuilder reverse using tochararray
+        String in = "alsdkjfflksdjflkdjfklj";
+        System.out.println(in);
+        StringBuilder sb = new StringBuilder();
+        char[] ca = in.toCharArray();
+        for(int i = in.length()-1; i >= 0; i--){
+            sb.append(ca[i]);   // stange check against length of ca array causes issue with the loop??
+        };
+        System.out.println(sb);
+
+
+
