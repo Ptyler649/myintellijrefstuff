@@ -24,7 +24,7 @@
         replace.forEach(System.out::print); // you can just run the forEach to print out as a shortcut
 
 
- // string test compiler funnies
+ // string test compiler funnies - discussion on immutability stack also heap memory
             String a = "test";
             String b = "test";
             if(a == b){
@@ -66,3 +66,98 @@
 
 
 
+
+
+
+
+reverse string using Arrays and sort function . Arrays.sort
+
+reverse string using split with . “” for chars with “ “ for words
+
+reverse string using split with words .
+
+swap 2 numbers by only using a third variable .
+
+swap 2 numbers using only those 2 variables . +, -, - (`remember this pattern bab, abb, b-aa`)
+
+check if a number is prime . use /2 and % modula . hint - two loops with inner loop less than number being checked
+
+roman numerals solution .  use hashmap as lookup and move right to left thru the numbers 
+
+count occurences using hashmap . - use merge and entry 
+
+sort list of strings using lambda . for strings → and then compareTo
+
+sort list of numbers using lambda . for numbers no need for the compareTo
+
+sort list of objects using lambda  . create comparators and then use those for method chaining, stream, sorted(add comparator, add .thenComparing, .collect collectors to list, separate stream to for each loop
+
+- dont forget constructor to allow add new
+
+      - dont forget to add get and setters and string overide to allow print out
+
+- dont forget comparator and stream here and that :: is short hand for calling a classes method via its class name
+
+sort list of objects by string and then number using lambda.
+
+create a linked list and the switch values left to right if any value if the two numbers are odd ** use Collections.swap functionality. dual index starting at 0, and 1 with a break at 1 reaching size()
+
+given a list of numbers return the 2 numbers that combine to make the given number
+
+Write a Java Program to count the number of words in a string using HashMap  -uses merge and Entry concept
+
+Write a Java Program to iterate HashMap using While and advance for loop
+Write a Java Program to find whether a string or number is palindrome or not.
+Write a Java Program for the Fibonacci series
+Write a Java Program to iterate ArrayList using for-loop, while-loop, and advance for-loop
+Write a Java Program to find the duplicate characters in a string. -hashmap
+Write a Java Program to find the second-highest number in an array - sort and then count back??
+Write a Java Program to remove all white spaces from a string with using replace()
+Write a Java Program to remove all white spaces from a string without using replace() - use split and loop
+
+Write a program to convert List to Array
+Using ArrayList class get() method (convert list to array)
+Using ArrayList class toArray() method convert to object array (convert arraylist to object)
+Using Arrays class copyOf() method convert object to string
+check a value in a hashset using contains
+convert linkedlist to arraylist
+use remove method to remove an element within an arraylist
+how to add an element to array list at particular indix using the add with index
+
+also use leet code account
+
+also make sure off the bat you can code the most common java interview questions, and fast
+
+stretch these and make them more performant
+
+useful techniques from leet code to practice
+
+use the contains key from a hashmap to check for groups of elememts
+
+use the pop and push for a Stack - Stack<Character> mystack = new Stack<>();
+
+(the above combination can be powerful in solving some of these problems refernce the parethesis problem as an example
+
+also stack.isEmpty() can be usefull
+
+two sorted linked lists to be merged - 1 solution, use isEmpty while loop on both lists, checking if first elements are smaller than the other and then adding to merge list the smaller, and continueing, making sure at the end to check if any list is empty and then just at the rest, but another answer is stream concat the both lists, and then sort and output
+
+for add / remove element - two pointer approach is a good one, where u just overwrite based on the condition = true
+
+also ** useful find was to navigate in eclipse to file and right mouse click and replace with to get prior history if u accidental remove something
+
+good to note - checking a string for null do these both needle == null || needle.length() == 0 as
+
+this copes both with null and “” which is a single unknown character
+
+design patterns examples
+
+singleton - db driver to customer is real life example, downside be careful once down this rabbit whole you have to keep it that way
+
+fascade - compiler restricts to provide specific perfections, downside leakage
+
+bridge - Abstract interface and link out to other implementations e.g db out to mongo/sql server - downside is dont overuse this
+
+strategy - containing logic into a single strategy, default strategies - downside
+
+observer - pub / sub pattern - loose coupling from publisher to subscribers, downside you can over board on this pattern easily.
