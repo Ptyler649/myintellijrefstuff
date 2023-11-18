@@ -66,11 +66,17 @@
 
 
 
+// reverse string using Arrays and sort function Arrays.sort
+        String[] stringArray = {"banana", "apple", "grape", "orange"};
+        System.out.println("Original array: " + Arrays.toString(stringArray));
+        // ascending order
+        Arrays.sort(stringArray);
+        System.out.println("Sorted array in ascending order: " + Arrays.toString(stringArray));
+        // descending order
+        Arrays.sort(stringArray, Collections.reverseOrder());
+        System.out.println("Sorted array in descending order: " + Arrays.toString(stringArray));
 
 
-
-
-reverse string using Arrays and sort function . Arrays.sort
 
 reverse string using split with . “” for chars with “ “ for words
 
