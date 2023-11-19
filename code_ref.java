@@ -78,9 +78,38 @@
 
 
 
-reverse string using split with . “” for chars with “ “ for words
+//reverse string using split with . “”
+       String str = "dsflkjdfklfj";
+       String[] strList = str.split("");
+       for(int i = strList.length-1; i >= 0; i--){
+           System.out.println(strList[i]);
+       };
 
-reverse string using split with words .
+
+ //reverse string using split with . “” using streams
+        String str = "dsflkjdfklfj";
+        String[] strList = str.split("");
+        List<String> reversedList = Arrays.stream(strList)
+                .collect(Collectors.toList());
+        Collections.reverse(reversedList);
+        System.out.println(reversedList);
+
+
+//reverse string using split with word using “ ” 
+       String str = "the quick brown fox jumped over the lazy dog";
+       String[] strList = str.split(" ");
+       for(int i = strList.length-1; i >= 0; i--){
+           System.out.println(strList[i]);
+       };
+
+
+//reverse string using split with . “” using streams
+        List<String> reversedList = Arrays.stream(strList)
+                        .collect(Collectors.toList());
+        Collections.reverse(reversedList);
+        System.out.println(reversedList);
+
+
 
 swap 2 numbers by only using a third variable .
 
