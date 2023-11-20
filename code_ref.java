@@ -111,9 +111,28 @@
 
 
 
-swap 2 numbers by only using a third variable .
+// swap 2 numbers by only using a third variable .
+        int a = 2;
+        int b = 3;
+        int temp;
+        System.out.println("before"+a+b);
+        temp = a;
+        a = b;
+        b = temp;
+        System.out.println("after"+a+b);
 
-swap 2 numbers using only those 2 variables . +, -, - (`remember this pattern bab, abb, b-aa`)
+
+
+// swap 2 numbers using only those 2 variables . +, -, - (`remember this pattern bab, abb, b-aa`)
+        int a = 2;
+        int b = 3;
+        System.out.println("before:"+a+b);
+        b = a + b;
+        a = b - a;
+        b = b - a;
+        System.out.println("after:"+a+b);
+
+
 
 check if a number is prime . use /2 and % modula . hint - two loops with inner loop less than number being checked
 
